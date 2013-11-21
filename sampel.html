@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<br>
+<div id="upload_area">
+  <input id="upload_file" name="image" type="file" />
+</div>
+
+<br>
+
+<div id="draw_area">
+  <canvas id="upload_canvas" width="0" height="0"></canvas>
+  <canvas id="base" width="0" height="0" style="position: absolute; z-index: 0; display:none;"></canvas>
+  <canvas id="layer1" width="0" height="0" style="position: absolute; z-index: 0; display:none;"></canvas>
+  <canvas id="layer2" width="0" height="0" style="position: absolute; z-index: 1; display:none;"></canvas>
+</div>
+
+  <!-- set this render canvas hidden -->
+  <canvas id="render" width="0" height="0"></canvas>
+<br>
+
+<a id="upload_button" class="btn btn-info btn-lg" href="#" role="button">アップロードする</a>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="trimming_upload.js"></script>
+</body>
+</html>
